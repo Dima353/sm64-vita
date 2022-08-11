@@ -7,7 +7,15 @@ cd deps
 
 git clone https://github.com/Rinnegatamante/vitaGL.git
 cd vitaGL
-make HAVE_SHARK=1 install -j4
+git checkout 700f7ac
+make HAVE_SBRK=1 HAVE_SHARK=1 install
+wait
+cd ..
 
+git clone https://github.com/Rinnegatamante/vitaShaRK.git
+cd vitaShaRK
+git checkout 7264cea
+make install
+wait
 cd ../../
-rm -rf deps
+
