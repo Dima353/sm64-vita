@@ -43,8 +43,8 @@ get_download_link () {
 3. Place a Super Mario 64 ROM called ```baserom.<VERSION>.z64``` into the repository's root directory for asset extraction, 
 where VERSION can be ```us```, ```jp```, or ```eu```.
 4. Building
-    1. Run `./build_deps.sh` to build and install dependencies. This only has to be done once.
-    2. Run `make TARGET_VITA=1 vpk` to build the game. Add `-j4` to improve build time.
+    - Run `./build_deps.sh` to build and install dependencies. This only has to be done once.
+    - Run `make TARGET_VITA=1 vpk` to build the game. Add `-j4` to improve build time.
 5. The installable vpk will be located at `build/us_vita/sm64.<VERSION>.vpk`
 
 ## Known Issues
