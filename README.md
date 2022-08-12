@@ -21,8 +21,8 @@ Ubuntu or WSL
 ### Build Instructions
 1. Install [Vita SDK](https://github.com/vitasdk/vdpm)
 
-If you encounter error ```Invalid hostname error while running bootstrap-vitasdk.sh``` then make changes to the file:
-```vdpm\include\install-vitasdk.sh```
+If you encounter error `Invalid hostname error while running bootstrap-vitasdk.sh` then make changes to the file:
+`vdpm\include\install-vitasdk.sh`
 
 Before:
 ```bash
@@ -41,12 +41,13 @@ get_download_link () {
 - `git clone https://github.com/Dima353/sm64-vita.git`
 - `cd sm64-vita`
 
-3. Place a Super Mario 64 ROM called ```baserom.<VERSION>.z64``` into the repository's root directory for asset extraction, 
-where VERSION can be ```us```, ```jp```, or ```eu```.
+3. Place a Super Mario 64 ROM called `baserom.<VERSION>.z64` into the repository's root directory for asset extraction, 
+where VERSION can be `us`, `jp`, or `eu`.
 4. Building
     - Run `./build_deps.sh` to build and install dependencies. This only has to be done once.
     - Run `make TARGET_VITA=1 vpk` to build the game. Add `-j4` to improve build time.
 5. The installable vpk will be located at `build/us_vita/sm64.<VERSION>.vpk`
+6. To add patches, look in `README.md` along the path: `sm64-vita\enhancements`
 
 ## Known Issues
 
