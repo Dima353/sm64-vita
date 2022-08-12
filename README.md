@@ -16,6 +16,8 @@ For running this on the PS Vita you will first need to extract the runtime shade
 Ubuntu: 20.04 or WSL
 - `sudo apt install -y git build-essential pkg-config`
 - `sudo apt install python-is-python3`
+MSYS2
+- `pacman -S git make python3 mingw-w64-x86_64-gcc`
 
 ### Build Instructions
 1. Install [Vita SDK](https://vitasdk.org/)
