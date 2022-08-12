@@ -13,15 +13,13 @@ Savedata is stored at `ux0:data/sm64_save_file.bin`. `cont.m64` can be put eithe
 ### Prerequisites
 For running this on the PS Vita you will first need to extract the runtime shader compiler. Follow this [guide](https://samilops2.gitbook.io/vita-troubleshooting-guide/shader-compiler/extract-libshacccg.suprx) for help with that.
 
-Ubuntu: 20.04 or WSL
+Ubuntu or WSL
 - `sudo apt install -y git build-essential pkg-config`
 - `sudo apt install python-is-python3`
 
-MSYS2
-- `pacman -S git make python3 mingw-w64-x86_64-gcc`
 
 ### Build Instructions
-1. Install [Vita SDK](https://vitasdk.org/)
+1. Install [Vita SDK](https://github.com/vitasdk/vdpm)
 
 If you encounter error ```Invalid hostname error while running bootstrap-vitasdk.sh``` then make changes to the file:
 ```vdpm\include\install-vitasdk.sh```
